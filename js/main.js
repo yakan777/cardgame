@@ -59,6 +59,8 @@ window.onload=function(){
             firstCard=td;
         }else{
             if(firstCard.num===td.num){
+                firstCard.classList.add("fadeout");
+                td.classList.add("fadeout");
                 //同じだった時の処理
                 firstCard=null;
             }else{
